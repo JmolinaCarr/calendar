@@ -1,6 +1,6 @@
-var currentTime = document.getElementById("currentTime");
+var currentDay = document.getElementById("currentDay");
 setInterval(() => {
     var now = moment();
-    var actualTime = now.format("h:mm:ssA");
-    currentTime.textContent = actualTime;
+    var actualTime = now.format("MMMM Do YYYY, h:mm:ssA");
+    currentDay.textContent = actualTime;
 }, 1000);
